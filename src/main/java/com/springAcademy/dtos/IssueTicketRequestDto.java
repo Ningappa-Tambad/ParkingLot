@@ -1,10 +1,21 @@
-package com.springAcademy.models;
+package com.springAcademy.dtos;
 
-public class Vehicle extends BaseModel
-{
+import com.springAcademy.models.VehicleTypes;
+
+public class IssueTicketRequestDto {
+
+    private int id;
     private String vehicleNumber;
     private VehicleTypes vehicleType;
-    private String ownerName;
+    private String OwnerName;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getVehicleNumber() {
         return vehicleNumber;
@@ -23,10 +34,10 @@ public class Vehicle extends BaseModel
     }
 
     public String getOwnerName() {
-        return ownerName;
+        return OwnerName;
     }
 
     public void setOwnerName(String ownerName) {
-        this.ownerName = ownerName;
+        OwnerName = ownerName;
     }
 }
