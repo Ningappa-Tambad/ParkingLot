@@ -1,0 +1,10 @@
+package com.springAcademy.models;
+
+public enum ParkingSpotStatus {
+
+    OCCUPIED,
+    VACANT,
+    RESERVED,
+    OUT_OF_SERVICE;
+
+}
