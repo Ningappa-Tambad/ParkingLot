@@ -4,17 +4,17 @@ import com.springAcademy.models.VehicleTypes;
 
 public class IssueTicketRequestDto {
 
-    private int id;
+    private Long gateId;
     private String vehicleNumber;
     private VehicleTypes vehicleType;
     private String OwnerName;
 
-    public int getId() {
-        return id;
+    public Long getGateId() {
+        return gateId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setGateId(Long gateId) {
+        this.gateId = gateId;
     }
 
     public String getVehicleNumber() {
